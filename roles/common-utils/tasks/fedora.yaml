@@ -1,0 +1,7 @@
+---
+- name: Install programms
+  become: yes
+  yum:
+    name: {{ item }}
+    state: present
+  loop: "{{ repo_list }}"
