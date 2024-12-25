@@ -4,12 +4,12 @@ all:
       hosts:
         web01:
           ansible_host:
-          ansible_user: user
-          ansible_password:
+          ansible_user: {{ ansible_user }}
+          ansible_password: {{ ansible_password }}
           
     db_servers:
       hosts:
         db01:
           ansible_host:
-          ansible_user: user
-          ansible_password:
+          ansible_user: {{ ansible_user }}
+          ansible_password: {{ ansible_password }}
