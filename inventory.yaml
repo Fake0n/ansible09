@@ -3,13 +3,13 @@ all:
     web_servers:
       hosts:
         web01:
-          ansible_host:
-          ansible_user: {{ ansible_user }}
-          ansible_password: {{ ansible_password }}
+          ansible_host: 51.250.68.194
+          ansible_user: user
+          ansible_password: ygokjzw
           
     db_servers:
       hosts:
         db01:
-          ansible_host:
-          ansible_user: {{ ansible_user }}
-          ansible_password: {{ ansible_password }}
+          ansible_host: 51.250.10.170
+          ansible_user: user
+          ansible_password: ygokjzw
