@@ -13,5 +13,9 @@
   set_fact:
     repo_file: "{{ utils_supported_os_family[ansible_facts['os_family'] | lower] }}"
 
+- name: debug repo_file
+  debug:
+    msg: "{{ repo_file }}"
+
 - name: Include tasks for the proper OS
   include_tasks: "{{ repo_file }}"

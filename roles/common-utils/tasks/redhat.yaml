@@ -4,7 +4,7 @@
   yum:
     name: "{{ item }}"
     state: present
-  loop: "{{ repo_list }}"
+  loop: "{{ program_list }}"
 
 - name: Add tmux.conf on server
   become: yes

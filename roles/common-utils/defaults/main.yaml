@@ -1,5 +1,5 @@
 # programms
-programs list: ['htop', 'net-tools', 'vim', 'tmux']
+program_list: ['htop', 'net-tools', 'vim', 'tmux']
 
 # ansible_user ansible_password
 ansible_user: ""
