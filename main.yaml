@@ -1,0 +1,9 @@
+---
+- name: Install utilitys on servers
+  hosts: all
+  become: true
+  roles:
+    - common-utils
+      vars:
+        ansible_user: "user"
+        ansible_password: ""
