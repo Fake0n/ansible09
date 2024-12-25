@@ -2,7 +2,7 @@
 - name: Install programms
   become: yes
   apt:
-    name: {{ item }}
+    name: "{{ item }}"
     state: present
   loop: "{{ repo_list }}"
 
