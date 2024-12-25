@@ -9,5 +9,5 @@
 - name: Add tmux.conf on server
   become: yes
   copy:
-    src: "{{ files/ | default() }}.tmux.conf"
-    dest: "/root/tmux.conf"
+    src: "{{ files | default() }}.tmux.conf"
+    dest: "/root/.tmux.conf"
